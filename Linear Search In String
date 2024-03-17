@@ -1,0 +1,19 @@
+public class linearQ1 {
+    public static void main(String[] args){
+        String a= "Aishvary";
+        char target = 'a';
+       int res =  Search_in_String(a,target);
+        System.out.println(res);
+    }
+    static  int Search_in_String(String a,char  target){
+        if(a == null){
+            return  -1;
+        }
+        for(int i=0; i<a.length();i++){
+            if(target == a.charAt(i)){
+                return  i;
+            }
+        }
+        return  -1;
+    }
+}
